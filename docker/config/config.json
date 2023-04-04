@@ -33,7 +33,7 @@
       "baseURL": "http://apollo.cloudns.ph:3999",
       "google": {
         "authEndpoint": "http://apollo.cloudns.ph:3999/auth/google" ,
-        "clientId": "12756942729-rnfat7gh51h7hghsq5irvlvvvoj2qjiv.apps.googleusercontent.com"
+        "clientId": "123456789-xyz.apps.googleusercontent.com"
       },
       "microsoft": {
         "authEndpoint": "http://localhost:3999/auth/microsoft" ,
