@@ -1,5 +1,5 @@
 resource "openstack_compute_instance_v2" "server" {
-  name = "apollo3-docker-test"
+  name = "apollo3"
   image_id = var.image
   flavor_id = var.flavor
   availability_zone = var.availability_zone
@@ -47,7 +47,7 @@ resource "null_resource" "provisioner" {
   provisioner "remote-exec" {
     inline = [
       "chmod -R 755 /home/ubuntu/docker",
-      "chmod 755 /home/ubuntu/docke/docker-compose.yml",
+      "chmod 755 /home/ubuntu/docker-compose.yml",
       "sudo apt-get update",
       "sudo apt-get install -y docker.io",
       "sudo systemctl start docker",
